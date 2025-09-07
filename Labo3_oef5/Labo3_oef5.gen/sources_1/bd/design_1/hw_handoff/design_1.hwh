@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Oct 19 12:57:01 2023" VIVADOVERSION="2023.1">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS/>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/FullAdder_0" HWVERSION="1.0" INSTANCE="FullAdder_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="FullAdder" VLNV="xilinx.com:module_ref:FullAdder:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_FullAdder_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Cin" SIGIS="undef" SIGNAME="xlconstant_2_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_2" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Cout" SIGIS="undef" SIGNAME="FullAdder_0_Cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FullAdder_1" PORT="Cin"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/FullAdder_1" HWVERSION="1.0" INSTANCE="FullAdder_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="FullAdder" VLNV="xilinx.com:module_ref:FullAdder:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_FullAdder_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="xlconstant_3_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_3" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="xlconstant_4_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_4" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Cin" SIGIS="undef" SIGNAME="FullAdder_0_Cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FullAdder_0" PORT="Cout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Cout" SIGIS="undef" SIGNAME="FullAdder_1_Cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FullAdder_3" PORT="Cin"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/FullAdder_2" HWVERSION="1.0" INSTANCE="FullAdder_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="FullAdder" VLNV="xilinx.com:module_ref:FullAdder:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_FullAdder_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="xlconstant_8_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_8" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="xlconstant_7_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_7" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Cin" SIGIS="undef" SIGNAME="FullAdder_3_Cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FullAdder_3" PORT="Cout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Cout" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/FullAdder_3" HWVERSION="1.0" INSTANCE="FullAdder_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="FullAdder" VLNV="xilinx.com:module_ref:FullAdder:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_FullAdder_0_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="xlconstant_6_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_6" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="xlconstant_5_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_5" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Cin" SIGIS="undef" SIGNAME="FullAdder_1_Cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FullAdder_1" PORT="Cout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Cout" SIGIS="undef" SIGNAME="FullAdder_3_Cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FullAdder_2" PORT="Cin"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FullAdder_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_1" HWVERSION="1.1" INSTANCE="xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FullAdder_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_2" HWVERSION="1.1" INSTANCE="xlconstant_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_2_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FullAdder_0" PORT="Cin"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_3" HWVERSION="1.1" INSTANCE="xlconstant_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_3_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FullAdder_1" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_4" HWVERSION="1.1" INSTANCE="xlconstant_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_2_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_4_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FullAdder_1" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_5" HWVERSION="1.1" INSTANCE="xlconstant_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_5_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FullAdder_3" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_6" HWVERSION="1.1" INSTANCE="xlconstant_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_1_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_6_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FullAdder_3" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_7" HWVERSION="1.1" INSTANCE="xlconstant_7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_1_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_7_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FullAdder_2" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_8" HWVERSION="1.1" INSTANCE="xlconstant_8" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_1_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_8_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FullAdder_2" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

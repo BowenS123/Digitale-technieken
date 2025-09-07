@@ -1,0 +1,192 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xF9D36230F9D36230",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../IPI_example.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1"
+    },
+    "design_tree": {
+      "and_gate_0": "",
+      "or_gate_0": "",
+      "and_gate_1": "",
+      "and_gate_2": "",
+      "xlconstant_0": ""
+    },
+    "ports": {
+      "led0_0": {
+        "direction": "O"
+      },
+      "sw0_0": {
+        "direction": "I"
+      },
+      "sw1_0": {
+        "direction": "I"
+      },
+      "sw0_1": {
+        "direction": "I"
+      },
+      "sw1_1": {
+        "direction": "I"
+      },
+      "sw1_2": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "and_gate_0": {
+        "vlnv": "xilinx.com:module_ref:and_gate:1.0",
+        "xci_name": "design_1_and_gate_0_0",
+        "xci_path": "ip\\design_1_and_gate_0_0\\design_1_and_gate_0_0.xci",
+        "inst_hier_path": "and_gate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "and_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sw0": {
+            "direction": "I"
+          },
+          "sw1": {
+            "direction": "I"
+          },
+          "led0": {
+            "direction": "O"
+          }
+        }
+      },
+      "or_gate_0": {
+        "vlnv": "xilinx.com:module_ref:or_gate:1.0",
+        "xci_name": "design_1_or_gate_0_0",
+        "xci_path": "ip\\design_1_or_gate_0_0\\design_1_or_gate_0_0.xci",
+        "inst_hier_path": "or_gate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "or_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sw2": {
+            "direction": "I"
+          },
+          "sw3": {
+            "direction": "I"
+          },
+          "led1": {
+            "direction": "O"
+          }
+        }
+      },
+      "and_gate_1": {
+        "vlnv": "xilinx.com:module_ref:and_gate:1.0",
+        "xci_name": "design_1_and_gate_0_1",
+        "xci_path": "ip\\design_1_and_gate_0_1\\design_1_and_gate_0_1.xci",
+        "inst_hier_path": "and_gate_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "and_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sw0": {
+            "direction": "I"
+          },
+          "sw1": {
+            "direction": "I"
+          },
+          "led0": {
+            "direction": "O"
+          }
+        }
+      },
+      "and_gate_2": {
+        "vlnv": "xilinx.com:module_ref:and_gate:1.0",
+        "xci_name": "design_1_and_gate_0_2",
+        "xci_path": "ip\\design_1_and_gate_0_2\\design_1_and_gate_0_2.xci",
+        "inst_hier_path": "and_gate_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "and_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sw0": {
+            "direction": "I"
+          },
+          "sw1": {
+            "direction": "I"
+          },
+          "led0": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "design_1_xlconstant_0_0",
+        "xci_path": "ip\\design_1_xlconstant_0_0\\design_1_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0"
+      }
+    },
+    "nets": {
+      "and_gate_0_led0": {
+        "ports": [
+          "and_gate_0/led0",
+          "or_gate_0/sw2"
+        ]
+      },
+      "and_gate_1_led0": {
+        "ports": [
+          "and_gate_1/led0",
+          "or_gate_0/sw3"
+        ]
+      },
+      "and_gate_2_led0": {
+        "ports": [
+          "and_gate_2/led0",
+          "led0_0"
+        ]
+      },
+      "or_gate_0_led1": {
+        "ports": [
+          "or_gate_0/led1",
+          "and_gate_2/sw0"
+        ]
+      },
+      "sw0_0_1": {
+        "ports": [
+          "sw0_0",
+          "and_gate_0/sw0"
+        ]
+      },
+      "sw0_1_1": {
+        "ports": [
+          "sw0_1",
+          "and_gate_1/sw0"
+        ]
+      },
+      "sw1_0_1": {
+        "ports": [
+          "sw1_0",
+          "and_gate_0/sw1"
+        ]
+      },
+      "sw1_1_1": {
+        "ports": [
+          "sw1_1",
+          "and_gate_1/sw1"
+        ]
+      },
+      "sw1_2_1": {
+        "ports": [
+          "sw1_2",
+          "and_gate_2/sw1"
+        ]
+      }
+    }
+  }
+}

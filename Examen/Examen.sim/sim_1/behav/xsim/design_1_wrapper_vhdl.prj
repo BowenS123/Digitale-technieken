@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Examen.srcs/sources_1/new/AND_port.vhd" \
+"../../../../Examen.srcs/sources_1/new/NAND_port.vhd" \
+"../../../../Examen.srcs/sources_1/new/XOR_port.vhd" \
+"../../../../Examen.srcs/sources_1/new/NOR_port.vhd" \
+"../../../../Examen.ip_user_files/bd/design_1/ip/design_1_AND_port_0_0/sim/design_1_AND_port_0_0.vhd" \
+"../../../../Examen.ip_user_files/bd/design_1/ip/design_1_NAND_port_0_0/sim/design_1_NAND_port_0_0.vhd" \
+"../../../../Examen.ip_user_files/bd/design_1/ip/design_1_AND_port_0_1/sim/design_1_AND_port_0_1.vhd" \
+"../../../../Examen.ip_user_files/bd/design_1/ip/design_1_XOR_port_0_0/sim/design_1_XOR_port_0_0.vhd" \
+"../../../../Examen.ip_user_files/bd/design_1/ip/design_1_NOR_port_0_0/sim/design_1_NOR_port_0_0.vhd" \
+"../../../../Examen.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../Examen.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

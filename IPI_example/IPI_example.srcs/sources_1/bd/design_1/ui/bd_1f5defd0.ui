@@ -1,0 +1,32 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.717131",
+   "Default View_TopLeft":"-528,-303",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port port-id_led0_0 -pg 1 -lvl 4 -x 580 -y 50 -defaultsOSRD
+preplace port port-id_sw0_0 -pg 1 -lvl 0 -x -50 -y -50 -defaultsOSRD
+preplace port port-id_sw1_0 -pg 1 -lvl 0 -x -50 -y -20 -defaultsOSRD
+preplace port port-id_sw0_1 -pg 1 -lvl 0 -x -50 -y 70 -defaultsOSRD
+preplace port port-id_sw1_1 -pg 1 -lvl 0 -x -50 -y 100 -defaultsOSRD
+preplace port port-id_sw1_2 -pg 1 -lvl 0 -x -50 -y 160 -defaultsOSRD
+preplace inst and_gate_0 -pg 1 -lvl 1 -x 80 -y -100 -defaultsOSRD
+preplace inst or_gate_0 -pg 1 -lvl 2 -x 280 -y 30 -defaultsOSRD
+preplace inst and_gate_1 -pg 1 -lvl 1 -x 80 -y 120 -defaultsOSRD
+preplace inst and_gate_2 -pg 1 -lvl 3 -x 470 -y 50 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 80 -y 10 -defaultsOSRD
+preplace netloc and_gate_2_led0 1 3 1 N 50
+preplace netloc sw0_0_1 1 0 1 -30 -110n
+preplace netloc sw1_0_1 1 0 1 -10 -90n
+preplace netloc sw0_1_1 1 0 1 -10 70n
+preplace netloc sw1_1_1 1 0 1 -30 100n
+preplace netloc and_gate_1_led0 1 1 1 170 40n
+preplace netloc and_gate_0_led0 1 1 1 170 -100n
+preplace netloc or_gate_0_led1 1 2 1 370 30n
+preplace netloc sw1_2_1 1 0 3 -20J -170 NJ -170 380J
+levelinfo -pg 1 -50 80 280 470 580
+pagesize -pg 1 -db -bbox -sgen -140 -210 670 520
+"
+}
+

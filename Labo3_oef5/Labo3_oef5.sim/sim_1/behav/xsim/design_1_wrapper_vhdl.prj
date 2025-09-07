@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Labo3_oef5.srcs/sources_1/new/FullAdder.vhd" \
+"../../../../Labo3_oef5.ip_user_files/bd/design_1/ip/design_1_FullAdder_0_0/sim/design_1_FullAdder_0_0.vhd" \
+"../../../../Labo3_oef5.ip_user_files/bd/design_1/ip/design_1_FullAdder_0_1/sim/design_1_FullAdder_0_1.vhd" \
+"../../../../Labo3_oef5.ip_user_files/bd/design_1/ip/design_1_FullAdder_0_2/sim/design_1_FullAdder_0_2.vhd" \
+"../../../../Labo3_oef5.ip_user_files/bd/design_1/ip/design_1_FullAdder_0_3/sim/design_1_FullAdder_0_3.vhd" \
+"../../../../Labo3_oef5.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../Labo3_oef5.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

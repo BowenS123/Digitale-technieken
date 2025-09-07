@@ -1,0 +1,203 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../Labo3_oef4.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1"
+    },
+    "design_tree": {
+      "Labo3_oef4_AND_0": "",
+      "Labo3_oef4_XOR_0": "",
+      "Labo3_oef4_AND_1": "",
+      "Labo3_oef4_XOR_1": "",
+      "Labo3_oef4_XOR_2": ""
+    },
+    "ports": {
+      "SW0": {
+        "direction": "I"
+      },
+      "SW1": {
+        "direction": "I"
+      },
+      "SW2": {
+        "direction": "I"
+      },
+      "LED0": {
+        "direction": "O"
+      },
+      "LED1": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "Labo3_oef4_AND_0": {
+        "vlnv": "xilinx.com:module_ref:Labo3_oef4_AND:1.0",
+        "xci_name": "design_1_Labo3_oef4_AND_0_0",
+        "xci_path": "ip\\design_1_Labo3_oef4_AND_0_0\\design_1_Labo3_oef4_AND_0_0.xci",
+        "inst_hier_path": "Labo3_oef4_AND_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Labo3_oef4_AND",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "input1": {
+            "direction": "I"
+          },
+          "input2": {
+            "direction": "I"
+          },
+          "output": {
+            "direction": "O"
+          }
+        }
+      },
+      "Labo3_oef4_XOR_0": {
+        "vlnv": "xilinx.com:module_ref:Labo3_oef4_XOR:1.0",
+        "xci_name": "design_1_Labo3_oef4_XOR_0_0",
+        "xci_path": "ip\\design_1_Labo3_oef4_XOR_0_0\\design_1_Labo3_oef4_XOR_0_0.xci",
+        "inst_hier_path": "Labo3_oef4_XOR_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Labo3_oef4_XOR",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "input1": {
+            "direction": "I"
+          },
+          "input2": {
+            "direction": "I"
+          },
+          "output": {
+            "direction": "O"
+          }
+        }
+      },
+      "Labo3_oef4_AND_1": {
+        "vlnv": "xilinx.com:module_ref:Labo3_oef4_AND:1.0",
+        "xci_name": "design_1_Labo3_oef4_AND_0_1",
+        "xci_path": "ip\\design_1_Labo3_oef4_AND_0_1\\design_1_Labo3_oef4_AND_0_1.xci",
+        "inst_hier_path": "Labo3_oef4_AND_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Labo3_oef4_AND",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "input1": {
+            "direction": "I"
+          },
+          "input2": {
+            "direction": "I"
+          },
+          "output": {
+            "direction": "O"
+          }
+        }
+      },
+      "Labo3_oef4_XOR_1": {
+        "vlnv": "xilinx.com:module_ref:Labo3_oef4_XOR:1.0",
+        "xci_name": "design_1_Labo3_oef4_XOR_0_1",
+        "xci_path": "ip\\design_1_Labo3_oef4_XOR_0_1\\design_1_Labo3_oef4_XOR_0_1.xci",
+        "inst_hier_path": "Labo3_oef4_XOR_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Labo3_oef4_XOR",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "input1": {
+            "direction": "I"
+          },
+          "input2": {
+            "direction": "I"
+          },
+          "output": {
+            "direction": "O"
+          }
+        }
+      },
+      "Labo3_oef4_XOR_2": {
+        "vlnv": "xilinx.com:module_ref:Labo3_oef4_XOR:1.0",
+        "xci_name": "design_1_Labo3_oef4_XOR_0_2",
+        "xci_path": "ip\\design_1_Labo3_oef4_XOR_0_2\\design_1_Labo3_oef4_XOR_0_2.xci",
+        "inst_hier_path": "Labo3_oef4_XOR_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Labo3_oef4_XOR",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "input1": {
+            "direction": "I"
+          },
+          "input2": {
+            "direction": "I"
+          },
+          "output": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Labo3_oef4_AND_0_output": {
+        "ports": [
+          "Labo3_oef4_AND_0/output",
+          "Labo3_oef4_XOR_2/input2"
+        ]
+      },
+      "Labo3_oef4_AND_1_output": {
+        "ports": [
+          "Labo3_oef4_AND_1/output",
+          "Labo3_oef4_XOR_2/input1"
+        ]
+      },
+      "Labo3_oef4_XOR_0_output": {
+        "ports": [
+          "Labo3_oef4_XOR_0/output",
+          "Labo3_oef4_AND_1/input2",
+          "Labo3_oef4_XOR_1/input1"
+        ]
+      },
+      "Labo3_oef4_XOR_1_output": {
+        "ports": [
+          "Labo3_oef4_XOR_1/output",
+          "LED0"
+        ]
+      },
+      "Labo3_oef4_XOR_2_output": {
+        "ports": [
+          "Labo3_oef4_XOR_2/output",
+          "LED1"
+        ]
+      },
+      "SW0_1": {
+        "ports": [
+          "SW0",
+          "Labo3_oef4_XOR_0/input1",
+          "Labo3_oef4_AND_0/input2"
+        ]
+      },
+      "SW1_1": {
+        "ports": [
+          "SW1",
+          "Labo3_oef4_XOR_0/input2",
+          "Labo3_oef4_AND_0/input1"
+        ]
+      },
+      "SW2_1": {
+        "ports": [
+          "SW2",
+          "Labo3_oef4_AND_1/input1",
+          "Labo3_oef4_XOR_1/input2"
+        ]
+      }
+    }
+  }
+}

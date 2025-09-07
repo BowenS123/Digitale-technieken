@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Oct 19 13:45:40 2023
+# Process ID: 5868
+# Current directory: C:/devWorks/Labo3_oef1/Labo3_oef1.runs/synth_1
+# Command line: vivado.exe -log Labo3_oef1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Labo3_oef1.tcl
+# Log file: C:/devWorks/Labo3_oef1/Labo3_oef1.runs/synth_1/Labo3_oef1.vds
+# Journal file: C:/devWorks/Labo3_oef1/Labo3_oef1.runs/synth_1\vivado.jou
+# Running On: Bowen, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 17014 MB
+#-----------------------------------------------------------
+source Labo3_oef1.tcl -notrace

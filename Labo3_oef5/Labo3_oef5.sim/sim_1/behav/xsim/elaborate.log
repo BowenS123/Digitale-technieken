@@ -1,0 +1,37 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.FullAdder [fulladder_default]
+Compiling architecture design_1_fulladder_0_0_arch of entity xil_defaultlib.design_1_FullAdder_0_0 [design_1_fulladder_0_0_default]
+Compiling architecture design_1_fulladder_0_1_arch of entity xil_defaultlib.design_1_FullAdder_0_1 [design_1_fulladder_0_1_default]
+Compiling architecture design_1_fulladder_0_2_arch of entity xil_defaultlib.design_1_FullAdder_0_2 [design_1_fulladder_0_2_default]
+Compiling architecture design_1_fulladder_0_3_arch of entity xil_defaultlib.design_1_FullAdder_0_3 [design_1_fulladder_0_3_default]
+Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant(CON...
+Compiling module xil_defaultlib.design_1_xlconstant_0_0
+Compiling module xil_defaultlib.design_1_xlconstant_0_1
+Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant(CON...
+Compiling module xil_defaultlib.design_1_xlconstant_0_2
+Compiling module xil_defaultlib.design_1_xlconstant_2_0
+Compiling module xil_defaultlib.design_1_xlconstant_2_1
+Compiling module xil_defaultlib.design_1_xlconstant_1_0
+Compiling module xil_defaultlib.design_1_xlconstant_1_1
+Compiling module xil_defaultlib.design_1_xlconstant_1_2
+Compiling module xil_defaultlib.design_1_xlconstant_1_3
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper
+Built simulation snapshot design_1_wrapper_behav

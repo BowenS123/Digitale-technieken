@@ -1,0 +1,140 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x9C087F249C087F24",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../Labo7_oef2.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "AND_Poort_0": "",
+      "AND_Poort_1": "",
+      "OR_Poort_0": ""
+    },
+    "ports": {
+      "SW0": {
+        "direction": "I"
+      },
+      "SW2": {
+        "direction": "I"
+      },
+      "SW1": {
+        "direction": "I"
+      },
+      "LED0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "AND_Poort_0": {
+        "vlnv": "xilinx.com:module_ref:AND_Poort:1.0",
+        "xci_name": "design_1_AND_Poort_0_0",
+        "xci_path": "ip\\design_1_AND_Poort_0_0\\design_1_AND_Poort_0_0.xci",
+        "inst_hier_path": "AND_Poort_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AND_Poort",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "AND_Poort_1": {
+        "vlnv": "xilinx.com:module_ref:AND_Poort:1.0",
+        "xci_name": "design_1_AND_Poort_0_1",
+        "xci_path": "ip\\design_1_AND_Poort_0_1\\design_1_AND_Poort_0_1.xci",
+        "inst_hier_path": "AND_Poort_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AND_Poort",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "OR_Poort_0": {
+        "vlnv": "xilinx.com:module_ref:OR_Poort:1.0",
+        "xci_name": "design_1_OR_Poort_0_0",
+        "xci_path": "ip\\design_1_OR_Poort_0_0\\design_1_OR_Poort_0_0.xci",
+        "inst_hier_path": "OR_Poort_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "OR_Poort",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "AND_Poort_0_C": {
+        "ports": [
+          "AND_Poort_0/C",
+          "OR_Poort_0/A"
+        ]
+      },
+      "AND_Poort_1_C": {
+        "ports": [
+          "AND_Poort_1/C",
+          "OR_Poort_0/B"
+        ]
+      },
+      "A_0_1": {
+        "ports": [
+          "SW0",
+          "AND_Poort_0/A"
+        ]
+      },
+      "A_1_1": {
+        "ports": [
+          "SW1",
+          "AND_Poort_1/A",
+          "AND_Poort_0/B"
+        ]
+      },
+      "B_0_1": {
+        "ports": [
+          "SW2",
+          "AND_Poort_1/B"
+        ]
+      },
+      "OR_Poort_0_C": {
+        "ports": [
+          "OR_Poort_0/C",
+          "LED0"
+        ]
+      }
+    }
+  }
+}

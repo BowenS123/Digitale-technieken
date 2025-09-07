@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Labo5_VB_behav" "xil_defaultlib.Labo5_VB" -log "elaborate.log" 

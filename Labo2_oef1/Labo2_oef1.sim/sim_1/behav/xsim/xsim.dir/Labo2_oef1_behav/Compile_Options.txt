@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Labo2_oef1_behav" "xil_defaultlib.Labo2_oef1" -log "elaborate.log" 

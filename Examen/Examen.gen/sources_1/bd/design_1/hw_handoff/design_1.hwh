@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov 14 14:52:35 2023" VIVADOVERSION="2023.1">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="BTN0" SIGIS="undef" SIGNAME="External_Ports_BTN0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="NAND_port_0" PORT="A"/>
+        <CONNECTION INSTANCE="AND_port_0" PORT="A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BTN1" SIGIS="undef" SIGNAME="External_Ports_BTN1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AND_port_1" PORT="B"/>
+        <CONNECTION INSTANCE="NOR_port_0" PORT="A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BTN2" SIGIS="undef" SIGNAME="External_Ports_BTN2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="XOR_port_0" PORT="A"/>
+        <CONNECTION INSTANCE="NAND_port_0" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BTN3" SIGIS="undef" SIGNAME="External_Ports_BTN3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="NOR_port_0" PORT="B"/>
+        <CONNECTION INSTANCE="AND_port_0" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="LD1" SIGIS="undef" SIGNAME="AND_port_1_C">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AND_port_1" PORT="C"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="LD2" SIGIS="undef" SIGNAME="XOR_port_0_C">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="XOR_port_0" PORT="C"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="LD3" SIGIS="undef" SIGNAME="NOR_port_0_C">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="NOR_port_0" PORT="C"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="LD0" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/AND_port_0" HWVERSION="1.0" INSTANCE="AND_port_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AND_port" VLNV="xilinx.com:module_ref:AND_port:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_AND_port_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_BTN0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTN0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_BTN3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTN3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C" SIGIS="undef" SIGNAME="AND_port_0_C">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="XOR_port_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/AND_port_1" HWVERSION="1.0" INSTANCE="AND_port_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AND_port" VLNV="xilinx.com:module_ref:AND_port:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_AND_port_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="NAND_port_0_C">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NAND_port_0" PORT="C"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_BTN1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTN1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C" SIGIS="undef" SIGNAME="AND_port_1_C">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LD1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/NAND_port_0" HWVERSION="1.0" INSTANCE="NAND_port_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="NAND_port" VLNV="xilinx.com:module_ref:NAND_port:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_NAND_port_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_BTN0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTN0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_BTN2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTN2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C" SIGIS="undef" SIGNAME="NAND_port_0_C">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AND_port_1" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/NOR_port_0" HWVERSION="1.0" INSTANCE="NOR_port_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="NOR_port" VLNV="xilinx.com:module_ref:NOR_port:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_NOR_port_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_BTN1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTN1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_BTN3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTN3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C" SIGIS="undef" SIGNAME="NOR_port_0_C">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LD3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/XOR_port_0" HWVERSION="1.0" INSTANCE="XOR_port_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="XOR_port" VLNV="xilinx.com:module_ref:XOR_port:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_XOR_port_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_BTN2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTN2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="AND_port_0_C">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AND_port_0" PORT="C"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C" SIGIS="undef" SIGNAME="XOR_port_0_C">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LD2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LD0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

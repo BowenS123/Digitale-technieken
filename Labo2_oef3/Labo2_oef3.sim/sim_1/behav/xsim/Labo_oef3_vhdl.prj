@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Labo2_oef3.srcs/sources_1/new/Labo_oef3.vhd" \
+
+# Do not sort compile order
+nosort
